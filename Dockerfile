@@ -5,7 +5,7 @@ RUN apk update && \
     apk upgrade && \
     apk add bash rtmpdump ffmpeg
 
-RUN mkdir /record
+RUN mkdir /recording
 
 COPY record.sh /record.sh
 
