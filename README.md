@@ -14,6 +14,6 @@ docker run --rm -it -v /로컬/디렉토리:/recording recording-ebs:latest "프
 
 ## TODO
 
-* [] 외부 환경설정 파일
-* [] 팟캐스트 기능
+* [ ] 외부 환경설정 파일
+* [ ] 팟캐스트 기능
 * ...
