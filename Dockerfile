@@ -3,7 +3,10 @@ LABEL maintainer="sogeuni@gmail.com"
 
 RUN apk update && \
     apk upgrade && \
-    apk add bash rtmpdump ffmpeg
+    apk add bash tzdata rtmpdump ffmpeg
+
+# set timezone (Asia/Seoul)
+RUN cp /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
 RUN mkdir /recording
 
