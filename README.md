@@ -1,3 +1,7 @@
+
+[![Docker Automated build](https://img.shields.io/docker/automated/sogeuni/recording-ebs.svg)](https://hub.docker.com/r/sogeuni/recording-ebs/) 
+[![Docker Build Status](https://img.shields.io/docker/build/sogeuni/recording-ebs.svg)](https://hub.docker.com/r/sogeuni/recording-ebs/)
+
 # Docker image for recording EBS
 
 EBS 방송 녹음을 위한 Docker 이미지
