@@ -7,12 +7,14 @@ PROGRAM_DASH=${PROGRAM// /-}
 RECORD_MINS=$(($2 * 60))
 
 # make directory
-REC_MONTH=`date -d '2 hour ago' +%y%m`
+#REC_MONTH=`date -d '2 hour ago' +%y%m`
+REC_MONTH=`TZ='UTC-07:00' date +%y%m`
 RECORDING_ROOT=/recording/$PROGRAM/$REC_MONTH
 mkdir -p "$RECORDING_ROOT"
 
 # make record file name
-REC_DATE=`date -d '2 hour ago' +%Y%m%d`
+#REC_DATE=`date -d '2 hour ago' +%Y%m%d`
+REC_DATE=`TZ='UTC-07:00' date +%Y%m%d`
 MP3_FILE_NAME=$PROGRAM_DASH"_"$REC_DATE.mp3
 
 # recording
